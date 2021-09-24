@@ -1,0 +1,46 @@
+
+
+ function shortestPath (matrix) {
+     let result = Infinity;
+
+     function traverse(x, y, distance) {
+
+         // Base case
+         if (x < 0 || y < 0 ||  x >= matrix.length || y >= matrix.length ) { 
+             return;
+         }
+
+         if (matrix[y][x] === 1) {
+             return;
+         }
+
+         if (x === matrix[0].length - 1) && y === matrix.length - 1) {
+
+             result = math.min(result, distance);
+             return;
+         }
+
+         traverse(x+1, y, distance + 1);
+         traverse(x-1, y, distance + 1);
+         traverse(x, y+1, distance + 1);
+         traverse(x, y-1, distance + 1);
+
+         }
+
+
+
+     }
+
+     traverse(0, 0, 1);
+
+     return result;
+ }
+
+ const matrix = 
+[[0,0,0,0,0],
+ [0,1,1,1,0],
+ [0,1,0,0,0],
+ [0,0,0,1,0]];
+
+console.log (shortest path (matrix));
+
