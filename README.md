@@ -1,10 +1,7 @@
 # vidly-mosh
 code from react tutorial
 
-If cloning drill down to vidly directory and 
-
-to run: npm start
-to see: localhost:3000
+If cloning drill down to vidly directory and see below:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
